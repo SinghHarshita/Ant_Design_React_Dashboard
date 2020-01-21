@@ -8,8 +8,8 @@ import { Layout } from 'antd';
 import PageWrapper from './components/PageWrapper';
 import Header from './components/Header';
 import Footer from './components/PageFooter';
-import FirstContent from './components/FirstContent';
-import SecondContent from './components/SecondContent';
+import FirstContent from './components/Test';
+import SecondContent from './components/TestSecondContent';
 
 // const { Content, Sider } = Layout;
 // const { Title } = Typography;
@@ -21,8 +21,8 @@ function App() {
     <div>
        
         <BrowserRouter>
-         <Layout style={{height:'100%'}}>
-          <PageWrapper>
+         {/* <Layout style={{height:'100%'}}> */}
+          
             <Route 
               exact={true}
               path = "/"
@@ -33,9 +33,10 @@ function App() {
               path = "/second"
               component = {SecondContent}
             />
-          </PageWrapper>
-          <FirstContent/>
-          </Layout>
+          {/* </PageWrapper> */}
+          {/* <FirstContent/> */}
+          {/* <SecondContent/> */}
+          {/* </Layout> */}
                   
           
         </BrowserRouter>
