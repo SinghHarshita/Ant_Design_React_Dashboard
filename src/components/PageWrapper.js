@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Icon, Breadcrumb } from 'antd';
+import { Layout, Menu, Icon } from 'antd';
 import { Typography } from 'antd';
-import { Avatar } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+// import { Avatar } from 'antd';
+const { Sider } = Layout;
 const { Title } = Typography;
 
 export default class PageWrapper extends Component {
@@ -23,18 +23,23 @@ export default class PageWrapper extends Component {
                     </div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1">
-                            <a href="/second">
+                            <a href="/">
                                 <Icon type="user" />
-                                <span className="nav-text">nav 1</span>
+                                <span className="nav-text">Dashboard</span>
                             </a>
                         </Menu.Item>
                         <Menu.Item key="2">
-                        <Icon type="video-camera" />
-                        <span className="nav-text">nav 2</span>
+                            <a href="/second">
+                                <Icon type="video-camera" />
+                                <span className="nav-text">nav 2</span> 
+                            </a>
                         </Menu.Item>
                         <Menu.Item key="3">
-                        <Icon type="upload" />
-                        <span className="nav-text">nav 3</span>
+                            <a href="/form">
+                                <Icon type="upload" />
+                                <span className="nav-text">nav 3</span>
+                            </a>
+                        
                         </Menu.Item>
                         <Menu.Item key="4">
                         <Icon type="user" />
